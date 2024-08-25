@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PHP Test</title>
+    <title>Founders Park Clinic</title>
 </head>
 <body>
     <h1>Hello there!</h1>
