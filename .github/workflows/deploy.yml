@@ -21,4 +21,4 @@ jobs:
 
       - name: Deploy to Godaddy via SFTP
         run: |
-          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/path/to/your/public_html/
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/uenlppo34djc/public_html/
