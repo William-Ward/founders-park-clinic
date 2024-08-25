@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/tailwind.css">
     <title>Founders Park Clinic</title>
 </head>
 <body>

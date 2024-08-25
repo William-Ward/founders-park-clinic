@@ -473,3 +473,5 @@ composer.lock
 *.sass.map
 *.scss.map
 secrets.json
+node_modules/
+package-lock.json
