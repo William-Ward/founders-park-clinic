@@ -15,15 +15,6 @@
         }
     </style>
 </head>
-    <!-- <h1>Hello there!</h1>
-    <h1>Enter payment details</h1>
-    <form action="create_payment.php" method="post">
-        <label for="amount">Amount:</label><br>
-        <input type="text" id="amount" name="amount" value="100"><br>
-        <label for="invoice-id">invoice ID:</label><br>
-        <input type="text" id="invoice-id" name="invoice-id"><br><br>
-        <input type="submit" value="Submit">
-    </form> -->
 <body class="bg-cover bg-gray-900 bg-opacity-50 flex items-center justify-center min-h-screen">
     <div class="container mx-auto p-6 bg-white bg-opacity-50 shadow-lg rounded-lg">
         <!-- Logo Image -->
@@ -44,8 +35,6 @@
                 <p class="text-gray-700 mb-2"><strong>Phone:</strong> 605-791-5959</p>
                 <p class="text-gray-700 mb-2"><strong>Fax:</strong> 605-791-5960</p>
                 <p class="text-gray-700 mb-2"><strong>After hours:</strong> 605-391-2691</p>
-
-
 
                 <h2 class="text-2xl font-semibold mb-4">Location</h2>
                 <p class="text-gray-700 mb-2">211 Founders Park Dr. Suite 3</p>
@@ -69,7 +58,7 @@
                 <!-- Transaction ID Field -->
                 <div>
                     <label for="account-number" class="block text-gray-700 font-semibold mb-2">Account Number</label>
-                    <input type="text" id="account-number" name="invoice-id" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="text" id="account-number" name="account-number" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 
                 <!-- Submit Button -->

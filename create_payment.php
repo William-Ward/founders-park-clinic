@@ -8,7 +8,7 @@
 
     // get amount and invoice id from the form
     $amount = $_POST['amount'];
-    $invoice_id = $_POST['invoice-id'];
+    $account_number = $_POST['account-number'];
     // output the square token to the console
     $square_token = getenv('SQUARE_TOKEN');
     $location_id = getenv('LOCATION_ID');
@@ -42,6 +42,7 @@
     
     $body = new \Square\Models\CreatePaymentLinkRequest();
     $body->setQuickPay($quick_pay);
+    $body->setPaymentNote('Payment for account number: ' . $account_number);
     
     $api_response = $client->getCheckoutApi()->createPaymentLink($body);
     
@@ -56,9 +57,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PHP Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/tailwind.css">
+    <title>Founders Park Clinic</title>
+    <style>
+        /* Adding a custom style for better control over the background image */
+        .bg-cover {
+            background-image: url('images/background1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body>
-    <button onclick="window.location.href='<?php echo $payment_link; ?>'">Pay</button>
+<body class="bg-cover bg-white bg-opacity-50 flex items-center justify-center min-h-screen">
+    <div class="container mx-auto p-6 bg-white bg-opacity-50 shadow-lg rounded-lg">
+        <button onclick="window.location.href='<?php echo $payment_link; ?>'"
+            class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            Pay
+        </button>
+    </div>
 </body>
 </html>
