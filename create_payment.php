@@ -31,7 +31,7 @@
     ]);
 
     $price_money = new \Square\Models\Money();
-    $price_money->setAmount($amount);
+    $price_money->setAmount($amount * 100);
     $price_money->setCurrency('USD');
     
     $quick_pay = new \Square\Models\QuickPay(
