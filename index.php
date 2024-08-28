@@ -42,6 +42,13 @@
                 
                 <p class="text-gray-700 mb-2"><strong>Office Hours</strong></p>
                 <p class="text-gray-700 mb-2">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                <a href="ROI.pdf" download="Release_Of_Information_Form.pdf"
+                    class="mb-4 px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                    >Download: Release Of Information Form</a>
+                <a href="FinalizedLetter.pdf" download="Clinic_Closure_Letter"
+                    class="mb-4 px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                    >Download: Clinic Closure Letter
+                </a>
             </div>
         </div>
 
@@ -49,16 +56,16 @@
         <div class="bg-white p-6 rounded-lg shadow-md">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Pay Bill</h2>
             <form action="create_payment.php" method="POST" class="space-y-4">
-                <!-- Dollar Amount Field -->
-                <div>
-                    <label for="amount" class="block text-gray-700 font-semibold mb-2">Dollar Amount</label>
-                    <input type="number" step="0.01" id="amount" name="amount" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-                
                 <!-- Transaction ID Field -->
                 <div>
                     <label for="account-number" class="block text-gray-700 font-semibold mb-2">Account Number</label>
                     <input type="text" id="account-number" name="account-number" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                
+                <!-- Dollar Amount Field -->
+                <div>
+                    <label for="amount" class="block text-gray-700 font-semibold mb-2">Dollar Amount</label>
+                    <input type="number" step="0.01" id="amount" name="amount" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 
                 <!-- Submit Button -->
