@@ -6,10 +6,11 @@
     // get amount and invoice id from the form
     $amount = $_POST['amount'];
     $invoice_id = $_POST['invoice-id'];
-
+    $square_token = getenv('SQUARE_TOKEN');
+    $loaction_id = getenv('LOCATION_ID');
 
     $client = new SquareClient([
-        'accessToken' => $prod_access_token,
+        'accessToken' => $square_token,
         'environment' => \Square\Environment::PRODUCTION
     ]);
 
@@ -20,7 +21,7 @@
     $quick_pay = new \Square\Models\QuickPay(
         'test',
         $price_money,
-        $prod_location_id
+        $location_id
     );
     
     $body = new \Square\Models\CreatePaymentLinkRequest();

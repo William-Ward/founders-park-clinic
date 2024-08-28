@@ -40,21 +40,26 @@
             <!-- Right Column: Contact and Location Information -->
             <div class="flex flex-col justify-center text-gray-800">
                 <h1 class="text-3xl font-bold mb-4">Contact Information</h1>
-                <p class="text-gray-700 mb-2"><strong>Phone:</strong> (123) 456-7890</p>
-                <p class="text-gray-700 mb-2"><strong>Email:</strong> info@example.com</p>
-                <p class="text-gray-700 mb-4"><strong>Address:</strong> 123 Main Street, City, Country</p>
-                
+                <!-- <p class="text-gray-700 mb-2"><strong>Phone:</strong> (605) 391-2691</p> -->
+                <p class="text-gray-700 mb-2"><strong>Phone:</strong> 605-791-5959</p>
+                <p class="text-gray-700 mb-2"><strong>Fax:</strong> 605-791-5960</p>
+                <p class="text-gray-700 mb-2"><strong>After hours:</strong> 605-391-2691</p>
+
+
+
                 <h2 class="text-2xl font-semibold mb-4">Location</h2>
-                <p class="text-gray-700 mb-2"><strong>Office Hours:</strong></p>
-                <p class="text-gray-700 mb-2">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p class="text-gray-700">Saturday: 10:00 AM - 4:00 PM</p>
+                <p class="text-gray-700 mb-2">211 Founders Park Dr. Suite 3</p>
+                <p class="text-gray-700 mb-2">Rapid City SD, 57701</p>
+                
+                <p class="text-gray-700 mb-2"><strong>Office Hours</strong></p>
+                <p class="text-gray-700 mb-2">Monday - Friday: 8:00 AM - 5:00 PM</p>
             </div>
         </div>
 
         <!-- Form Section -->
         <div class="bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Submit Your Payment</h2>
-            <form action="#" method="POST" class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Pay Bill</h2>
+            <form action="create_payment.php" method="POST" class="space-y-4">
                 <!-- Dollar Amount Field -->
                 <div>
                     <label for="amount" class="block text-gray-700 font-semibold mb-2">Dollar Amount</label>
@@ -63,13 +68,15 @@
                 
                 <!-- Transaction ID Field -->
                 <div>
-                    <label for="transaction-id" class="block text-gray-700 font-semibold mb-2">Transaction ID</label>
-                    <input type="text" id="transaction-id" name="transaction-id" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <label for="account-number" class="block text-gray-700 font-semibold mb-2">Account Number</label>
+                    <input type="text" id="account-number" name="invoice-id" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 
                 <!-- Submit Button -->
                 <div>
-                    <button type="submit" class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Submit</button>
+                    <button type="submit" class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        Continue
+                    </button>
                 </div>
             </form>
         </div>
