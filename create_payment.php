@@ -3,21 +3,31 @@
 
     use Square\SquareClient;
 
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+
     // get amount and invoice id from the form
     $amount = $_POST['amount'];
     $invoice_id = $_POST['invoice-id'];
     // output the square token to the console
     $square_token = getenv('SQUARE_TOKEN');
-    $loaction_id = getenv('LOCATION_ID');
+    $location_id = getenv('LOCATION_ID');
+    $environment = getenv('SQUARE_ENV');
 
-    if (!$square_token || !$location_id) {
-        echo 'Square token is not set';
+    if (!$square_token || !$location_id || !$environment) {
+        $square_token = $_ENV['SQUARE_TOKEN'];
+        $location_id = $_ENV['LOCATION_ID'];
+        $environment = $_ENV['SQUARE_ENV'];
+    }
+
+    if (!$square_token || !$location_id || !$environment) {
         exit;
     }
-    
+
+    \Square\Environment::PRODUCTION;
     $client = new SquareClient([
         'accessToken' => $square_token,
-        'environment' => \Square\Environment::SANDBOX
+        'environment' => $environment
     ]);
 
     $price_money = new \Square\Models\Money();
