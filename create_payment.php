@@ -7,8 +7,8 @@
     $amount = $_POST['amount'];
     $invoice_id = $_POST['invoice-id'];
     // output the square token to the console
-    $square_token = $_ENV['SQUARE_TOKEN'] || die ('Square token not found');
-    $loaction_id = $_ENV['LOCATION_ID'] || die ('Location ID not found');
+    $square_token = getenv('SQUARE_TOKEN') || die ('Square token not found');
+    $loaction_id = getenv('LOCATION_ID') || die ('Location ID not found');
     
     die ($square_token);
 
