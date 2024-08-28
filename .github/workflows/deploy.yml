@@ -20,11 +20,12 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Deploy to Staging site if branch is dev
-        if: github.ref == 'refs/heads/dev'
-        run: |
-          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST_DEV }}:/home/uenlppo34djc/public_html/
+      # - name: Deploy to Staging site if branch is dev
+      #   if: github.ref == 'refs/heads/dev'
+      #   run: |
+      #     rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST_DEV }}:/home/uenlppo34djc/public_html/
 
       - name: Deploy to Godaddy via SFTP
+        # if: github.ref == 'refs/heads/main'
         run: |
-          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/uenlppo34djc/public_html/
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/uenlppo34djc/public_html/foundersparkclinic.com/
