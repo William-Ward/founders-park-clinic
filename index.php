@@ -28,18 +28,18 @@
             </div>
             <!-- Card Boundary for Paragraphs -->
             <div class="bg-white p-6 rounded-lg shadow-md">
-                <p class="text-lg text-gray-700 mb-4">To request a <u>free</u> copy of your most up-to-date immunization records, please
-                    <a href="https://doh.sd.gov/topics/immunizations-vaccinations/immunization-records-request/" class="text-blue-500 hover:text-blue-700">click here</a>
+                <p class="text-lg text-gray-700 mb-4">To request a <u>free</u> copy of your most up-to-date immunization records, please go to
+                    <a href="https://doh.sd.gov/topics/immunizations-vaccinations/immunization-records-request/" class="text-blue-500 hover:text-blue-700"><u>https://doh.sd.gov/topics/immunizations-vaccinations/immunization-records-request/</u></a>
                 </p>
-                <p class="text-lg text-gray-700 mb-4">To request a <u>free</u> copy of your lab results, please
-                    <a href="https://www.labcorp.com/patients/results" class="text-blue-500 hover:text-blue-700">click here</a>
+                <p class="text-lg text-gray-700 mb-4">To request a <u>free</u> copy of your lab results, please go to
+                    <a href="https://www.labcorp.com/patients/results" class="text-blue-500 hover:text-blue-700"><u>https://www.labcorp.com/patients/results</u></a>
                 </p>
-                <p class="text-lg text-gray-700 mb-4">To request a copy of your visit records chart, please 
-                    <a href="http://desertriversolutions.com/requests" class="text-blue-500 hover:text-blue-700">click here</a>
+                <p class="text-lg text-gray-700 mb-4">To request a copy of your visit records chart, please go to
+                    <a href="http://desertriversolutions.com/requests" class="text-blue-500 hover:text-blue-700"><u>http://desertriversolutions.com/requests</u></a>
                     (a fee may apply)
                 </p>
                 <p class="text-lg text-gray-700 mb-4">For billing questions, call 
-                    <a href="tel:605-391-2691" class="text-blue-500 hover:text-blue-700">605-391-2691</a>. 
+                    <a href="tel:605-391-2691" class="text-blue-500 hover:text-blue-700"><u>605-391-2691</u></a>. 
                     Please leave a message, and we will return your call
                 </p>
             </div>
