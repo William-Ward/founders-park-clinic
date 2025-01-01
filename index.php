@@ -32,7 +32,7 @@
                     <a href="https://doh.sd.gov/topics/immunizations-vaccinations/immunization-records-request/" class="text-blue-500 hover:text-blue-700">click here</a>
                 </p>
                 <p class="text-lg text-gray-700 mb-4">To request a <u>free</u> copy of your lab results, please
-                    <a href="https://www.labcorp.com/patients/result" class="text-blue-500 hover:text-blue-700">click here</a>
+                    <a href="https://www.labcorp.com/patients/results" class="text-blue-500 hover:text-blue-700">click here</a>
                 </p>
                 <p class="text-lg text-gray-700 mb-4">To request a copy of your visit records chart, please 
                     <a href="http://desertriversolutions.com/requests" class="text-blue-500 hover:text-blue-700">click here</a>
